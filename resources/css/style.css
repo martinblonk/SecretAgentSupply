@@ -1,0 +1,189 @@
+/** Stylesheet for Secret Agent Supply Inc website **/
+
+/** Generic styles **/
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1, h4 {
+    font-weight: bold;
+}
+
+/** Conpany section styles **/
+.company {
+  background-color: black;
+  color: white;
+}
+
+.company img {
+    height: 1.5em;
+    padding-right: 15px;
+}
+
+.company .container {
+    display: flex;
+    align-items: center;
+    padding: 12px 0 12px 0.5em;
+}
+
+/** Main banner section styles **/
+.main-banner {
+  background: url(../images/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25em;
+}
+
+.headline {
+  background-color: black;
+  color: white;
+  width: 20em;
+  padding: 2em 3em;
+  position: relative;
+  top: 9em;
+}
+
+.headline h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+}
+
+/** Navigation bar styles **/
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75em 0;
+  list-style: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
+
+/** Products and Business Info styles **/
+.products, .business-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 0 0;
+}
+
+.product {
+    width: 30%;
+}
+
+.product-image img {
+  max-width: 8em;
+}
+
+.product-image {
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  border-image: initial;
+  padding: 2em 0px;
+}
+
+img {
+  border-style: none;
+}
+
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.info {
+   width: 35%;
+}
+
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .products, .business-info {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .info {
+  width: 90%;
+  margin: 0.5em auto;
+  }
+}
+/** Footer styles **/
+footer {
+  background-color: black;
+  color: white;
+  padding: 5em 0;
+  margin-top: 4em;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+  text-align: center;
+  }
+}
